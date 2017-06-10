@@ -16,7 +16,7 @@ def nicecal(year, month, show_month_info = 1, show_days = 1):
     """
     def wrapped_line(text):
         """Wraps a line in bar characters."""
-        return(("│ " + text).ljust(24) + " │")
+        return(("│ " + text).ljust(22) + " │")
     # Declare variables
     calendar_width = 22
     nice_calendar = []
