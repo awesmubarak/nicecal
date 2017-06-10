@@ -7,9 +7,10 @@ Create simple, nice looking ascii calendars.
 Usage
 =====
 
-Return a simple, formatted calendar:
+Month
+-----
 
-``nicecal(2038, 1)``
+``nicecal.month(2038, 1)``
 ::
 
     ┌──────────────────────┐
@@ -34,10 +35,7 @@ Options:
     - 0: Day names are not shown
     - 1: Day names are shown
 
-Examples
---------
-
-``>>>nicecal(2038, 1, show_month_info=0)``
+``>>>nicecal.month(2038, 1, show_month_info=0)``
 ::
 
     ┌──────────────────────┐
@@ -49,7 +47,7 @@ Examples
     │ 25 26 27 28 29 30 31 │
     └──────────────────────┘
 
-``>>>nicecal(2038, 1, show_month_info=2)``
+``>>>nicecal.month(2038, 1, show_month_info=2)``
 ::
 
     ┌──────────────────────┐
@@ -63,7 +61,7 @@ Examples
     └──────────────────────┘
 
 
-``>>>nicecal(2038, 1, show_days=0)``
+``>>>nicecal.month(2038, 1, show_days=0)``
 ::
 
     ┌──────────────────────┐
@@ -75,7 +73,7 @@ Examples
     │ 25 26 27 28 29 30 31 │
     └──────────────────────┘
 
-``>>>nicecal(2038, 1, show_month_info=2, show_days=0)``
+``>>>nicecal.month(2038, 1, show_month_info=2, show_days=0)``
 ::
 
     ┌──────────────────────┐
@@ -87,7 +85,7 @@ Examples
     │ 25 26 27 28 29 30 31 │
     └──────────────────────┘
 
-``>>>nicecal(2038, 1, show_month_info=0, show_days=0)``
+``>>>nicecal.month(2038, 1, show_month_info=0, show_days=0)``
 ::
 
     ┌──────────────────────┐

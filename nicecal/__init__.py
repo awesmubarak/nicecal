@@ -3,8 +3,8 @@
 
 import calendar
 
-def nicecal(year, month, show_month_info = 1, show_days = 1):
-    """Create simple, nice looking ascii calendars.
+def month(year, month, show_month_info = 1, show_days = 1):
+    """Returns a month's calendar.
     Options:
     -   show_month_info (default 1)
         -   0: No month information header
