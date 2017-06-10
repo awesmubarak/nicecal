@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as file:
 
 setup(
      name='nicecal',
-     version='1.0.0',
+     version='1.1.0',
      description='Create simple, nice looking ascii calendars.',
      long_description=long_description,
      url='https://github.com/abactel/nicecal',
