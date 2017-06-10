@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+# coding=utf-8
+"""Create simple, nice looking ascii calendars."""
 
 import calendar
 
 def nicecal(year, month, show_month_info = 1, show_days = 1):
-    """Return a nice calendar.
+    """Create simple, nice looking ascii calendars.
     Options:
     -   show_month_info (default 1)
         -   0: No month information header
@@ -15,27 +16,27 @@ def nicecal(year, month, show_month_info = 1, show_days = 1):
     """
     def wrapped_line(text):
         """Wraps a line in bar characters."""
-        return(("│ " + text).ljust(22) + " │")
-    # create variables
-    raw_calendar  = calendar.month(year, month).split("\n")
+        return(("│ " + text).ljust(24) + " │")
+    # Declare variables
     calendar_width = 22
     nice_calendar = []
-    # create top bar
-    nice_calendar.append("┌" + ("─" * calendar_width) + "┐")
-    # month bar
+    raw_calendar  = calendar.month(year, month).split("\n")
+    # Create month and year information
     if show_month_info == 1:
+        # Month only
         nice_calendar.append(wrapped_line((" " * 3) + raw_calendar[0][:-5]))
     elif show_month_info == 2:
+        # Month and year
         nice_calendar.append(wrapped_line(raw_calendar[0]))
-    # days bar
+    # Create day name bar
     if show_days:
         nice_calendar.append(wrapped_line(raw_calendar[1]))
-    # draw main calendar
+    # Create main calendar
     for line in raw_calendar[2:]:
         if line != "":
             nice_calendar.append(wrapped_line(line))
-    # bottom bar
+    # Create top and bottom bars
+    nice_calendar.insert(0, "┌" + ("─" * calendar_width) + "┐")
     nice_calendar.append("└" + ("─" * calendar_width) + "┘")
+    # Join list items and return
     return "\n".join(nice_calendar)
-
-print(nicecal(2038, 1, show_month_info=0))
