@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as file:
 setup(
      name='nicecal',
      version='1.0.0',
-     description='Create a simple, aesthetically pleasing ascii calendar.',
+     description='Create simple, nice looking ascii calendars.',
      long_description=long_description,
      url='https://github.com/abactel/nicecal',
      author='abactel',
@@ -25,6 +25,6 @@ setup(
          'License :: OSI Approved :: MIT License',
          'Programming Language :: Python'
      ],
-     keywords='calendar cal ascii',
+     keywords='nicecal calendar cal ascii',
      packages=['nicecal']
 )
