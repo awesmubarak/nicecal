@@ -2,7 +2,7 @@
 Nicecal
 =======
 
-Create simple, nice looking ascii calendars.
+Create simple calendars using box-drawing characters
 
 Usage
 =====
@@ -23,15 +23,15 @@ Month
     │ 25 26 27 28 29 30 31 │
     └──────────────────────┘
 
-The calendar outoput can also be modified in the following ways:
+The calendar output can be modified using the following arguments:
 
 Options:
 
 - ``show_month_info`` (default 1)
     - 0: No month information header
-    - 1: Only month name centered as header
-    - 2: Both month name and year centered as header
-- ``show_days`` (defaut 1)
+    - 1: Only month name centred as header
+    - 2: Both month name and year centred as header
+- ``show_days`` (default 1)
     - 0: Day names are not shown
     - 1: Day names are shown
 

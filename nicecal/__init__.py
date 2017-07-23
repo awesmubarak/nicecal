@@ -1,5 +1,5 @@
 # coding=utf-8
-"""Create simple, nice looking ascii calendars."""
+"""Create simple calendars using box-drawing characters."""
 
 import calendar
 
